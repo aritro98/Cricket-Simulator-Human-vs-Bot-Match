@@ -8,3 +8,21 @@ It is a console-based T20 cricket simulator where a human-managed team (Team A) 
 - Realistic ball-by-ball simulation with random scoring events (runs, fours, sixes, wickets).
 - Persistent storage of match metadata and player performance in a MySQL database (`cricketdb`).
 - Tabular scoreboards and final summaries printed in the terminal.
+
+## Prerequisites & Dependencies
+- **Python** ≥ 3.8
+- **MySQL Server** (with `cricketdb` schema)
+- **Python Packages:**
+  - `mysql-connector-python`
+  - `prettytable`
+
+Install Python packages via pip:
+```bash
+pip install mysql-connector-python prettytable
+```
+
+## Installation and Setup
+1. Create database in your MySQL server:
+   ```sql
+   CREATE DATABASE cricketdb;
+   ```
