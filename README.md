@@ -26,3 +26,48 @@ pip install mysql-connector-python prettytable
    ```sql
    CREATE DATABASE cricketdb;
    ```
+2. Define tables (run these in your MySQL client):
+   ```sql
+   -- Match metadata
+   CREATE TABLE GAME (
+     MID INT PRIMARY KEY AUTO_INCREMENT,
+     MNAME VARCHAR(20) NOT NULL,
+     OVERS INT NOT NULL,
+     WINNER CHAR(1),
+     IS_DRAW CHAR(1),
+     BATSFIRST CHAR(1)
+   );
+
+   -- Human team scores
+   CREATE TABLE SCOREA (
+     RUNS INT,
+     FOURS INT,
+     SIXES INT,
+     BALLS INT,
+     PNAME VARCHAR(30) PRIMARY KEY
+   );
+
+   -- Bot team scores
+   CREATE TABLE SCOREB (
+     RUNS INT,
+     FOURS INT,
+     SIXES INT,
+     BALLS INT,
+     PNAME VARCHAR(30) PRIMARY KEY
+   );
+
+   -- Team rosters
+   CREATE TABLE TEAM1 (
+     PID CHAR(3) PRIMARY KEY,
+     PNAME VARCHAR(25) NOT NULL,
+     TYPE VARCHAR(25),
+     TNAME CHAR(1) DEFAULT 'A'
+   );
+   CREATE TABLE TEAM2 (
+     PID CHAR(3) PRIMARY KEY,
+     PNAME VARCHAR(25) NOT NULL,
+     TYPE VARCHAR(25),
+     TNAME CHAR(1) DEFAULT 'B'
+   );
+   ```
+3. Ensure the MySQL user configured in `game.py` has privileges on `cricketdb`.
