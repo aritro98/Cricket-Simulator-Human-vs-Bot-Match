@@ -71,3 +71,23 @@ pip install mysql-connector-python prettytable
    );
    ```
 3. Ensure the MySQL user configured in `game.py` has privileges on `cricketdb`.
+
+## Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aritro98/AI-Driven-Cricket-Simulation-Human-vs-Bot-T20-Match.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd AI-Driven-Cricket-Simulation-Human-vs-Bot-T20-Match
+   ```
+3. Configure database credentials in `game.py` (host, user, password).
+4. Run the simulator:
+   ```bash
+   python game.py
+   ```
+5. Follow on-screen menu to:
+   - Create or load teams
+   - Start a match (with coin toss)
+   - View live scoreboards
+   - View final summary and winner
