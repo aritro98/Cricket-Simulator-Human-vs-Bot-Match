@@ -1,9 +1,9 @@
-# Cricket Simulator: Human vs Bot T20 Match
+# Cricket Simulator: Human vs Bot Match
 
-This repository implements a command‐line based T20 cricket simulation. Users can define teams, execute matches with realistic ball-by-ball outcomes, and persist match data in a MySQL database. The simulator is designed for ease of setup, extensibility, and clear presentation of match statistics.
+This repository implements a command‐line based cricket simulation. Users can define teams, execute matches with realistic ball-by-ball outcomes, and persist match data in a MySQL database. The simulator is designed for ease of setup, extensibility, and clear presentation of match statistics.
 
-## Overview
-It is a console-based T20 cricket simulator where a human-managed team (Team A) faces off against an AI-driven bot team (Team B). It provides:
+## Project Overview
+It is a console-based cricket simulator where a human-managed team (Team A) faces off against an AI-driven bot team (Team B). It provides:
 - A menu-driven interface for team creation, match setup, and score viewing.
 - Realistic ball-by-ball simulation with random scoring events (runs, fours, sixes, wickets).
 - Persistent storage of match metadata and player performance in a MySQL database (`cricketdb`).
@@ -75,11 +75,11 @@ pip install mysql-connector-python prettytable
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aritro98/AI-Driven-Cricket-Simulation-Human-vs-Bot-T20-Match.git
+   git clone https://github.com/aritro98/Cricket-Simulation-Human-vs-Bot-Match.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd AI-Driven-Cricket-Simulation-Human-vs-Bot-T20-Match
+   cd Cricket-Simulation-Human-vs-Bot-Match
    ```
 3. Configure database credentials in `game.py` (host, user, password).
 4. Run the simulator:
