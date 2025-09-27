@@ -2,6 +2,13 @@
 
 This repository implements a command‐line based cricket simulation. Users can define teams, execute matches with realistic ball-by-ball outcomes, and persist match data in a MySQL database. The simulator is designed for ease of setup, extensibility, and clear presentation of match statistics.
 
+## Table of Contents
+- [Overview](#overview)
+- [Prerequisites & Dependencies](#prerequisites-&-dependencies)
+- [Installation and Setup](#installation-and-setup)
+- [Usage](#usage)
+- [Future Scope](#future-scope)
+
 ## Overview
 It is a console-based cricket simulator where a human-managed team (Team A) faces off against an AI-driven bot team (Team B). It provides:
 - A menu-driven interface for team creation, match setup, and score viewing.
@@ -91,3 +98,10 @@ pip install mysql-connector-python prettytable
    - Start a match (with coin toss)
    - View live scoreboards
    - View final summary and winner
+
+## Future Scope
+1. **Polished Tkinter GUI:** Build a modern, responsive Tkinter frontend with animated scoreboard, ball-by-ball commentary panel, themed skins, and a demo mode (recorded GIF/video) to make the project immediately clickable and demo-friendly on the README.
+2. **Modular engine + API layer:** Separate the match engine from the UI and expose a simple REST/CLI API so contributors can swap the Tkinter UI for a web/mobile frontend or reuse the engine in other projects; clearly document the engine contract.
+3. **Cross-platform packaging & live demo:** Provide executable builds (PyInstaller) for Windows/Linux/macOS, a single-command Docker demo, and a hosted demo (or short video) linked in README so people can try the app in seconds without setup friction.
+4. **Quality, contribution surface & CI:** Add unit/integration tests for the engine, type hints, GitHub Actions for lint/test, CONTRIBUTING.md, “good first issue” tags, and badges — lower contributor friction and increase forks/stars.
+5. **Replay, analytics & smarter bots:** Save matches as JSON/CSV for replay and analytics, add a stats dashboard in the UI (player histograms, win-rates), and progressively improve the bot (skill profiles → heuristic AI → ML-trained opponents) to attract data/AI contributors.
