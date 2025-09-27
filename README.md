@@ -2,7 +2,7 @@
 
 This repository implements a command‐line based cricket simulation. Users can define teams, execute matches with realistic ball-by-ball outcomes, and persist match data in a MySQL database. The simulator is designed for ease of setup, extensibility, and clear presentation of match statistics.
 
-## Project Overview
+## Overview
 It is a console-based cricket simulator where a human-managed team (Team A) faces off against an AI-driven bot team (Team B). It provides:
 - A menu-driven interface for team creation, match setup, and score viewing.
 - Realistic ball-by-ball simulation with random scoring events (runs, fours, sixes, wickets).
